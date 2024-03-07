@@ -31,7 +31,7 @@ install_CFST() {
         wget -q --show-progress "$url" -P CFST
     done <<< "$download_urls"
     if [ -d "CFST" ]; then
-        cd CFST && tar -zxf .tar.gz
+        cd CFST && tar -zxf *.gz
     fi
 }
 
